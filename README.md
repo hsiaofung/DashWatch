@@ -1,59 +1,40 @@
 # DashWatch
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+A production-ready Angular SaaS Dashboard Starter Kit built with Angular 19 and NG-ZORRO.
 
-## Development server
+DashWatch helps developers build modern SaaS applications faster by providing a clean, opinionated, and scalable frontend architecture.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Why DashWatch?
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Most Angular dashboard templates fall into two extremes:
 
-## Code scaffolding
+- ❌ Over-engineered enterprise templates (hard to customize, like Metronic)
+- ❌ Barebone starters (no structure, no guidance)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+DashWatch sits in the middle:
 
-```bash
-ng generate component component-name
-```
+> A clean SaaS foundation that is **simple to start, but scalable to grow**.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🎯 What DashWatch Gives You
 
-## Building
+DashWatch is not just a UI kit — it's a **starter system for SaaS products**.
 
-To build the project run:
+It includes:
 
-```bash
-ng build
-```
+- 🔐 Authentication flow (Login / Logout)
+- 📊 Dashboard layout system
+- 🧭 Sidebar + routing structure
+- 🧱 Feature-based architecture
+- 🌙 Light / Dark theme support
+- 🔌 Mock API layer for development
+- ⚡ Angular 19 + Signals-ready architecture
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🧱 Architecture Overview
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+DashWatch follows a scalable structure:
