@@ -1,0 +1,23 @@
+<div style="max-width: 360px; margin: 100px auto;">
+  <h2>DashWatch Login</h2>
+
+  <input
+    type="email"
+    placeholder="Email"
+    [(ngModel)]="email"
+  />
+
+  <br /><br />
+
+  <input
+    type="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
+
+  <br /><br />
+
+  <button (click)="onLogin()">
+    Login
+  </button>
+</div>
