@@ -138,6 +138,8 @@ If you see this screen → installation is successful 🎉
  ### UI Components
 ![UI](./docs/ui.png)
 
+---
+
 ## 📁 Key Pages
 - /login → Authentication page
 - /dashboard → Main dashboard (protected route)
@@ -187,10 +189,8 @@ Planned improvements:
 
  ---
 
- 💡 Philosophy
-
-“DashWatch is not a dashboard template.
-It is a starting point for building SaaS products without reinventing the wheel.”
+ ## 💡 Philosophy    
+ “DashWatch is not a dashboard template. It is a starting point for building SaaS products without reinventing the wheel.”   
 
 ---
 
