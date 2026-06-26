@@ -39,13 +39,13 @@ It includes:
 
 DashWatch follows a scalable structure:
 
-src/app/
-├── core/ # Singleton services (auth, api, guards)
-├── shared/ # Reusable UI components
-├── layout/ # App shell (sidebar, header, layout)
-├── features/ # Business modules (auth, dashboard, etc.)
-├── data/ # Mock APIs / fake backend
-
+src/app/    
+├── core/ # Singleton services (auth, api, guards)    
+├── shared/ # Reusable UI components    
+├── layout/ # App shell (sidebar, header, layout)    
+├── features/ # Business modules (auth, dashboard, etc.)    
+├── data/ # Mock APIs / fake backend    
+  
 
 This ensures:
 
