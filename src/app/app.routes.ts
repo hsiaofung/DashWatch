@@ -1,24 +1,66 @@
+/*
+   AppComponent
+    │
+    ▼
+<router-outlet>
+    |
+    ├── LoginComponent
+    │
+    ▼
+AppShellComponent
+    │
+    ├── Sidebar
+    ├── Header
+    └── <router-outlet>
+             │
+             ▼
+      DashboardComponent
+*/
+
 import { Routes } from '@angular/router';
-import { LoginComponent } from './features/login/login.component';
-import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { authGuard } from './core/guards/auth.guard';
+import { AppShellComponent } from './shell/app-shell/app-shell.component';
 
 export const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: '/welcome' },
-  // { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.routes').then(m => m.WELCOME_ROUTES) }
-
-   {
+  // Default redirect to login page
+  {
     path: '',
     redirectTo: 'login',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
+
+  // Login page (outside the main shell)
   {
     path: 'login',
-    component: LoginComponent
+    loadComponent: () =>
+      import('./features/login/login.component').then((m) => m.LoginComponent),
   },
+
+  // Main application shell (contains Sidebar, Header, etc.)
   {
-    path: 'dashboard',
-    component: DashboardComponent,
-    canActivate: [authGuard]
-  }
+    path: '',
+    component: AppShellComponent,
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () =>
+          import('./features/dashboard/dashboard.component').then(
+            (m) => m.DashboardComponent
+          ),
+        title: 'Dashboard',
+      },
+
+      // Default redirect inside the shell
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+      },
+    ],
+  },
+
+  // 404 fallback route
+  {
+    path: '**',
+    redirectTo: 'login',
+  },
 ];
