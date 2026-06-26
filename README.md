@@ -104,6 +104,8 @@ npm install
 ng serve
 ```
 
+---
+
 ### 3. Open in browser
 
 ```bash
@@ -112,6 +114,30 @@ http://localhost:4200
 
 ---
 
+## 🎯 What You Should See After Running
+
+After login, you will enter:    
+
+📊 Dashboard page with KPI cards   
+🧭 Sidebar navigation (Dashboard / Table / Chart)   
+📈 Sample chart data visualization   
+🌙 Theme toggle (light/dark mode)   
+
+If you see this screen → installation is successful 🎉
+
+---
+
+ ## 📸 Preview
+
+ ### Login page
+ ![Login](./docs/login.png)
+
+ ### Dashboard UI
+ ![Dashboard](./docs/dashboard.png)
+
+ ### UI Components
+![UI](./docs/ui.png)
+
 ## 📁 Key Pages
 - /login → Authentication page
 - /dashboard → Main dashboard (protected route)
@@ -119,19 +145,19 @@ http://localhost:4200
 ---
 
 ## 🎯 Design Philosophy
-DashWatch is built around three principles:
-
-1. Simplicity First
-
-Avoid unnecessary complexity in early-stage SaaS products.
-
-2. Scalability by Design
-
-Feature-based architecture allows safe long-term growth.
-
-3. Product Mindset
-
-This is not a UI library — it's a SaaS foundation.
+DashWatch is built around three principles:   
+    
+1. Simplicity First   
+     
+Avoid unnecessary complexity in early-stage SaaS products.   
+    
+2. Scalability by Design    
+     
+Feature-based architecture allows safe long-term growth.   
+    
+3. Product Mindset    
+    
+This is not a UI library — it's a SaaS foundation.    
 
 ---
 
@@ -145,14 +171,7 @@ Planned improvements:
  - Multi-theme support
  - Plugin-based architecture
 
- ---
-
- ## 📸 Preview
- - Login page
- - Dashboard UI
- - Sidebar layout
-
- ---
+ --- 
 
  ## 🤝 Contributing
 
